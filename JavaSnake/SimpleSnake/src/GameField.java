@@ -1,6 +1,8 @@
 import java.awt.Color;
 import java.awt.Image;
 import java.util.Timer;
+
+import javax.swing.ImageIcon;
 import javax.swing.JPanel;
 
 public class GameField extends JPanel {
@@ -23,10 +25,15 @@ public class GameField extends JPanel {
 	private boolean InGame=true;
 	
 	
-	
-	
-	
 	public GameField() {
 		setBackground(Color.black);
+		LoadImages();
+	}
+	
+	public void LoadImages() {
+		ImageIcon iia = new ImageIcon("apple.png");
+		apple=iia.getImage();
+		ImageIcon iid = new ImageIcon("dot.png");
+		dot = iid.getImage();
 	}
 }
