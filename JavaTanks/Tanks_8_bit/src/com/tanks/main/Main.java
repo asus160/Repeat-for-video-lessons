@@ -8,7 +8,7 @@ public class Main {
 
 	public static void main(String[] args) {
 		
-		Display.Create(800, 600, "Tanks", 0x00ff00);
+		Display.Create(800, 600, "Tanks", 0x00ff00, 3);
 		
 		Timer t  = new Timer(1000/60, new AbstractAction() {
 			
